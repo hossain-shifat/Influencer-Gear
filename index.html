@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Influencer-Gear</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
+
+<body class="font-[Poppins]">
     <header>
         <!-- navbar section start -->
-         <nav class="navbar flex">
-            <div class="nav-logo">
-                <h3 class="logo color-01">Influencer-Gear</h3>
+        <nav class="flex justify-around items-center mt-10">
+            <li class="list-none md:hidden"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <div class="relative flex items-center justify-between">
+                <h3 class="font-bold text-2xl text-center ">Influencer Gear</h3>
             </div>
-            <div class="nav-items-conntainer">
-                <ul class="nav-item-lists flex">
-                    <li><a class="nav-item-link color-01" href="#">Home</a></li>
-                    <li><a class="nav-item-link color-01" href="#">Products</a></li>
-                    <li><a class="nav-item-link color-01" href="#">Sing up</a></li>
-                    <li><a class="nav-item-link color-01" href="#">Log in</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <div class="flex gap-10">
+                <ul class="hidden gap-10 sm:flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Sing up</a></li>
+                    <li><a href="#">Log in</a></li>
                 </ul>
+                <li class="list-none hidden md:block"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="list-none"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </div>
-         </nav>
+        </nav>
         <!-- navbar section end -->
         <!-- banner section start -->
-
-         <div class="banner flex">
-            <div class="banner-details">
-                <h2 class="banner-heading">Start your Journey as Influencer</h2>
-                <p class="banner-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-                <buttom class="btn">Preebook now</buttom>
-            </div>
-            <div class="banner-image flex">
-                <div class="banner-bg">
-                    <img class="banner-img" src="./images/main-camera.png" alt="">
+        <div class="flex flex-col-reverse justify-center md:grid md:grid-cols-2 md:justify-between md:max-w-[1140px] md:mx-auto mt-11 md:items-center ">
+            <div class=" mx-auto text-center">
+                <div class="md:grid md:justify-center">
+                    <h3 class="text-3xl text-center font-bold max-w-[404px] md:text-left">Start your Journey as Influencer</h3>
+                    <p class="max-w-[320px] mx-auto text-center py-10 md:text-left md:m-0 md:max-w-[505px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
+                    <button class="bg-[#E02C6D] py-3 px-8 rounded-full text-white font-medium cursor-pointer md:max-w-[190px]">Prebook now <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-         </div>
-
+            <div class=" my-18 mx-auto bg-[url(/images/Circle-design.svg)] bg-no-repeat bg-bottom-left bg-contain md:max-w-[440px] md:ml-20">
+                <img class="max-w-[260px] md:max-w-[440px] w-full " src="./images/main-camera.png" alt="">
+            </div>
+        </div>
         <!-- banner section end -->
     </header>
     <main>
@@ -49,5 +56,8 @@
     <footer>
 
     </footer>
+
+
 </body>
+
 </html>
